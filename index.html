@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Vegans & Fruits</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <section class="header">
@@ -130,10 +131,13 @@
     <section class="questions">
         <h1>Common questions</h1>
             <div class="q1">
-                <h2>How does Vegancart delivery and pickup work? 
-                <i class="fa fa-plus" id="show"  onclick="showContent()"></i>
-                <i class="fa fa-minus" id="hide" onclick="hideContent()"></i></h2>
-                <div id="queText">
+                <div class="que">
+                    <h2>How does Vegancart delivery and pickup work?</h2>
+                        <i class="fa fa-chevron-down" onclick="showContent()"></i>
+                    <!-- <i class="fa fa-plus" id="show"  onclick="showContent()"></i>
+                    <i class="fa fa-minus" id="hide" onclick="hideContent()"></i></h2> -->
+                </div>
+                <div class="answer">
                     <p>Instacart makes it easy to order from your favorite stores. Shop for items from stores near you, with a selection of
                     more than 500 retailers and trusted local grocers across North America. Then, Instacart will connect you with a personal
                     shopper in your area to shop and deliver your order. Contactless delivery is available with our “Leave at my door”
@@ -147,15 +151,13 @@
                     When you get to the store, use the Instacart app to notify us. Depending on the store, a shopper or store employee will
                     bring the groceries to your car, or you can pick them up at the designated area</p>
                 </div>
-                <hr>
             </div>
             <div class="q1">
-                <h2>How much does vegancart cost? <i class="fa fa-plus" id="show2"
-                        onclick="showContent2()"></i>
-            
-                    <i class="fa fa-minus" id="hide2" onclick="hideContent2()"></i>
-                </h2>
-                <div id="queText2">
+                <div class="que">
+                    <h2>How much does vegancart cost?</h2>
+                    <i class="fa fa-chevron-down" onclick="showContent()"></i>
+                </div>
+                <div class="answer">
                     <p>You don’t need a membership to order with Instacart. In fact, you can even order from warehouse clubs, like Costco,
                     Sam’s Club, and BJ’s Wholesale Club, without a retailer club membership.
                     <br>
@@ -177,15 +179,13 @@
                     recognition for excellent service. 100% of your tip goes directly to the shopper who delivers your order.
                     </p>
                 </div>
-                <hr>
             </div>
             <div class="q1">
-                <h2>What happens if something is out of stock? <i class="fa fa-plus" id="show3"
-                        onclick="showContent3()"></i>
-            
-                    <i class="fa fa-minus" id="hide3" onclick="hideContent3()"></i>
-                </h2>
-                <div id="queText3">
+                <div class="que">
+                    <h2>What happens if something is out of stock?</h2>
+                    <i class="fa fa-chevron-down" onclick="showContent()"></i>
+                </div>
+                <div class="answer">
                     <p>Instacart makes it easy to communicate with your shopper. When an item you want is out-of-stock at the store, your
                     shopper will follow your replacement preferences.
                     You can set item and delivery instructions in advance, as well as chat directly with your shopper while they shop and
@@ -198,15 +198,13 @@
                         <li>Don’t Replace: For items you’d rather not replace, choose “Don’t replace” to get a refund if the item is out of stock.</li>
                         </ul></p>
                 </div>
-                <hr>
             </div>
             <div class="q1">
-                <h2>What happens if there's an issue with my order? <i class="fa fa-plus" id="show4"
-                        onclick="showContent4()"></i>
-            
-                    <i class="fa fa-minus" id="hide4" onclick="hideContent4()"></i>
-                </h2>
-                <div id="queText4">
+                <div class="que">
+                    <h2>What happens if there's an issue with my order?</h2>
+                    <i class="fa fa-chevron-down" onclick="showContent()"></i>
+                </div>
+                <div class="answer">
                     <p>If something isn’t right, you’ve got options. In the Instacart app or website, you can report:
                     <br>
                     <ul>
@@ -218,13 +216,13 @@
                     </ul>
                     <br></p>
                 </div>
-                <hr>
             </div>
             <div class="q1">
-                <h2>Can i get contactless delivery with vegan cart  <i class="fa fa-plus" id="show5" onclick="showContent5()"></i>
-                    <i class="fa fa-minus" id="hide5" onclick="hideContent5()"></i>
-                </h2>
-                <div id="queText5">
+                <div class="que">
+                    <h2>Can i get contactless delivery with vegan cart?</h2>
+                    <i class="fa fa-chevron-down" onclick="showContent()"></i>
+                </div>
+                <div class="answer">
                     <p>The health and safety of our community is our number one priority. We are excited to offer contactless delivery through
                     our Leave at My Door delivery feature.
                     <br>
@@ -238,7 +236,6 @@
                     Customers who order alcohol, prescriptions, or certain high-value items may need to show ID upon delivery. We ask
                     shoppers to wear masks whenever they come into contact with customers</p>
                 </div>
-                <hr>
             </div>
 
     </section>
@@ -248,7 +245,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4 class="dvn"> Get deliveries with Instacart</h4>
+                    <h4 class="dropbtn" id="drp"> Get deliveries with Instacart</h4>
                     <i class="fa fa-apple"></i><h5>iOS</h5><i class="fa fa-android"></i><h5>Android</h5>
                 </div>
                 <div class="footer-col">
@@ -310,7 +307,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4 class="dvn">Become a shopper</h4>
+                    <h4 class="dvn" id="drp">Become a shopper</h4>
                     <i class="fa fa-apple"></i>
                     <h5>iOS</h5><i class="fa fa-android"></i>
                     <h5>Android</h5>
@@ -383,112 +380,6 @@
     
 <!-- end footer -->
 
-
-<!--------javascript for toaglle menu---->
-    <script type="text/javascript">
-        var navLinks = document.getElementById("navLinks");
-        var queText =document.getElementById("queText");
-        var show = document.getElementById("show");
-        var hide = document.getElementById("hide");
-        var queTextt = document.getElementById("queText2");
-        var showw = document.getElementById("show2");
-        var hidee = document.getElementById("hide2");
-        var queTexttt = document.getElementById("queText3");
-        var showww = document.getElementById("show3");
-        var hideee = document.getElementById("hide3");
-        var queTextttt = document.getElementById("queText4");
-        var showwww = document.getElementById("show4");
-        var hideeee = document.getElementById("hide4");
-        var queTexttttt = document.getElementById("queText5");
-        var showwwww = document.getElementById("show5");
-        var hideeeee = document.getElementById("hide5");
-
-        function showContent(){
-            queText.style.display="block";
-            queText.style.marginTop="50px";
-            hide.style.display="block";
-            hide.style.marginLeft="900px";
-            hide.style.marginTop="-35px";
-            show.style.display="none";
-        }
-        function hideContent() {
-            queText.style.display = "none";
-            show.style.display = "block";
-            hide.style.display = "none";
-            show.style.marginLeft = "900px";
-            show.style.marginTop = "-35px";
-        }
-        function showContent2(){
-            queTextt.style.display = "block";
-            queTextt.style.marginTop = "50px";
-            hidee.style.display = "block";
-            hidee.style.marginLeft = "900px";
-            hidee.style.marginTop = "-35px";
-            showw.style.display = "none";
-        }
-        
-        function hideContent2(){
-            queTextt.style.display = "none";
-            showw.style.display = "block";
-            hidee.style.display = "none";
-            showw.style.marginLeft = "900px";
-            showw.style.marginTop = "-35px";
-        }
-        function showContent3() {
-            queTexttt.style.display = "block";
-            queTexttt.style.marginTop = "50px";
-            hideee.style.display = "block";
-            hideee.style.marginLeft = "900px";
-            hideee.style.marginTop = "-35px";
-            showww.style.display = "none";
-        }
-
-        function hideContent3() {
-            queTexttt.style.display = "none";
-            showww.style.display = "block";
-            hideee.style.display = "none";
-            showww.style.marginLeft = "900px";
-            showww.style.marginTop = "-35px";
-        }
-        function showContent4() {
-            queTextttt.style.display = "block";
-            queTextttt.style.marginTop = "50px";
-            hideeee.style.display = "block";
-            hideeee.style.marginLeft = "900px";
-            hideeee.style.marginTop = "-35px";
-            showwww.style.display = "none";
-        }
-
-        function hideContent4() {
-            queTextttt.style.display = "none";
-            showwww.style.display = "block";
-            hideeee.style.display = "none";
-            showwww.style.marginLeft = "900px";
-            showwww.style.marginTop = "-35px";
-        }
-        function showContent5() {
-            queTexttttt.style.display = "block";
-            queTexttttt.style.marginTop = "50px";
-            hideeeee.style.display = "block";
-            hideeeee.style.marginLeft = "900px";
-            hideeeee.style.marginTop = "-35px";
-            showwwww.style.display = "none";
-        }
-
-        function hideContent5() {
-            queTexttttt.style.display = "none";
-            showwwww.style.display = "block";
-            hideeeee.style.display = "none";
-            showwwww.style.marginLeft = "900px";
-            showwwww.style.marginTop = "-35px";
-        }
-        function showMenu(){
-            navLinks.style.right="0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-        
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

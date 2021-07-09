@@ -291,8 +291,12 @@ nav .fa{
 }
 /* questions */
 .questions{
+    min-height: 100vh;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .questions h1{
     text-align: center;
@@ -300,68 +304,40 @@ nav .fa{
     margin-top: 75px;
     margin-bottom: 75px;
 }
-.questions h2{
-    font-weight:500;
-    text-align: left;
-    margin-left: 25px;
-    margin-bottom: -10px;
-}
-.questions p{
-    display: block;
-    text-decoration: none;
-    margin-left: 2%;
-    text-align: justify;
-    width: 800px;
-}
-.questions .q1 ul li{
-    margin-left: 80px;
-    text-align: left;
-    width: 300px;
-    font-size: 15px ;
-}
-#queText,#queText2,#queText3,#queText4,#queText5{
-    display: none;
-}
-
-.questions p{
-    text-overflow: ellipsis;
-}
-.questions h2 .fa-plus{
-    margin-left: 325px;
-    margin-bottom: 50px;
-    color: #0AAD0A;
+.q1{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #0AAD0A;
     cursor: pointer;
 }
-.questions #show2{
-    margin-left: 500px;
-}
-.questions #show3{
-    margin-left: 375px;
-}
-.questions #show4{
-    margin-left: 320px;
-}
-.questions #show5{
-    margin-left: 345px;
-}
-.questions #hide{
-    margin-left: 0;
-}
-.questions h2 .fa-minus{
-    margin-top: -10px;
-    color: #0AAD0A;
-    cursor: pointer;
-    display: none;
-}
-
-.questions .q1{
-    display: inline-block;
+.que{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-basis: 31%;
-    margin-top: 5%;
-    border-radius: 10px;
-    text-align: left;
 }
+.que h2{
+    font-size: 1.5rem;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease ;
+}
+.answer p{
+    padding-top: 1rem;
+}
+.q1.active .answer{
+    max-height: 300px;
+}
+.q1.active i{
+    transform: rotate(180deg);
+}
+.q1 i{
+    color: #0bd40b;
+    transition: 1.3s ease;
+}
+
 /* footer */
 .container{
     max-width: 1170px;
@@ -375,7 +351,7 @@ ul{
     list-style: none;
 }
 .footer{
-     background-color: #032e05;/* */
+    background-color: #032e05;
     padding: 70px 0;
 }
 
@@ -446,7 +422,8 @@ ul{
     display: inline-block;
     text-decoration: none;
     transition: 0.5s;
-}#fooTer .footer-col h4 a:hover{
+}
+#fooTer .footer-col h4 a:hover{
     color: #0bd40b;
     transform: scale(1.1);
     z-index: 2;
@@ -607,41 +584,45 @@ ul{
         border: none;
         cursor: pointer;
     }
-    .footer-col h4{
-        font-size: 10px;
-        margin-inline: 5px;
-        
+    .container{
+        max-width: 100px;
+        height: 300px;
+        margin: auto;
     }
     .footer-col i,h5{
         display: none;
     }
-    .footer-col .dvn{
-        display: none;
-    }
-    .footer-col {
-        position: relative;
-        display: inline-block;
-        font-size: 2px;
-        justify-content: center;
-    }
-    .dropdown-content {
-        display: none;
-        background-color: #ffffff;
-        position: absolute;
-        font-size: 2px;
-        min-width: 50px;
-        min-height: 60px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-    .dropdown-content a {
-        color: #032e05;
-        padding: 12px 16px;
-        margin-bottom: 0px;
+    .footer-col h4{
+        display: flex;
+        flex-direction: column;
         text-decoration: none;
-        display: block;
+        margin-bottom: 10px;
+        margin-top: 0;
+        margin-inline: 0px;
+        align-items: center;
+        font-size: 12px;
     }
-    .footer-col:hover .dropdown-content {
-        display: block;
+    .footer-col h4::before{
+    content: '';
+    position: absolute;
+
+    /* left: 0;
+    bottom: 0px;
+    background-color: #0AAD0A;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px; */
+    }
+    #drp{
+        display: none;
+    }
+    .footer-col h4{
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        font-weight: 0;
+        position: relative;
+    }
+    .footer-col ul li{
+        display: none;
     }
 }
