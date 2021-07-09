@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Poppins:ital,wght@0,100;0,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Vegans & Fruits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./img/Photo_1625382574606.png" alt="brand"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#" class="map"><i class="fa fa-phone"></i></a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Vegans <span>&</span> Fruits</h1>
+    <p>Having a good health is now one of the easiest thing in the world,you just need to <br> login to our vegans and Fruits store</p>
+    <a href="loginform.html" class="hero-btn btn">login</a>
+    <a href="signup.html" class="hero-btn btn2">Signup</a>
+</div>
+    </section>
+<!-- essentials -->
+    <section class="esentials">
+        <h2>Spark your 4th of july celebration</h2>
+        <p>vegan cart has all your party essentials</p>
+        <div class="rows">
+            <div class="items">
+                <img src="./img/avagado.jpg" alt="" class="fig">
+                <h3>Fruits</h3>
+            </div>
+            <div class="items">
+                <img src="./img/brocoli.jpg" alt="" class="fig">
+                <h3>Vegans</h3>
+            </div>
+            <div class="items">
+                <img src="./img/pexels-sunsetoned-7235673.jpg" alt="" class="fig">
+                <h3>starters</h3>
+            </div>
+            <div class="items">
+                <img src="./img/banana.jpg" alt="" class="fig">
+                <h3>Diet</h3>
+            </div>
+        </div>
+    </section>
+<!-- end of essentials -->
+<!-- start shopping -->
+    <section class="shopping">
+        <h2>Grocery delivery you can count on</h2>
+            <div class="grocery">
+                <div class="img">
+                    <img src="./img/choose.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1>Choose what you want</h1>
+                    <p>Select items from your favorite grocery stores at Instacart.  com or in the app.</p>
+                </div>
+            </div>
+            <div class="grocery">
+                <div class="img">
+                    <img src="./img/update.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1>See real-time updates</h1>
+                    <p>Personal shoppers pick items with care. Chat as they shop and manage your order.</p>
+                </div>
+            </div>
+            <div class="grocery">
+                <div class="img">
+                    <img src="./img/order deliver.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1>Get your items same-day</h1>
+                    <p>Pick a convenient time for you. Enjoy Instacart’s 100% quality guarantee on every order</p>
+                </div>
+            </div>
+    </section>
+    <div class="imgn">
+        <a href="#" class="shopping-btn">start shopping</a>
+    </div>
+<!-- end of start shopping -->
+<!-- service -->
+    <section class="services">
+        <div class="ser">
+            <h2>The world's <span>largest</span> online <br> grocery service</h2>
+            <img src="./img/store.jpg" alt="">
+        </div>
+        <div class="row">
+            <div class="items">
+                <h1>500 million <br> products</h1>
+                <p>available to shop <br> across the catalog</p>
+            </div>
+            <div class="items">
+                <h1>40,000 <br> stores</h1>
+                <p>from local grocers <br> to chain stores</p>
+            </div>
+            <div class="items">
+                <h1>5,500+ <br> cities</h1>
+                <p>served across the <br> U.S. & Canada</p>
+            </div>
+            <div class="items">
+                <h1>Millions of <br> orders</h1>
+                <p>delivered or <br> picked up yearly</p>
+            </div>
+        </div>
+    </section>
+<!-- end of service -->
+<!-- questons -->
+    <section class="questions">
+        <h1>Common questions</h1>
+            <div class="q1">
+                <h2>How does Vegancart delivery and pickup work? 
+                <i class="fa fa-plus" id="show"  onclick="showContent()"></i>
+                <i class="fa fa-minus" id="hide" onclick="hideContent()"></i></h2>
+                <div id="queText">
+                    <p>Instacart makes it easy to order from your favorite stores. Shop for items from stores near you, with a selection of
+                    more than 500 retailers and trusted local grocers across North America. Then, Instacart will connect you with a personal
+                    shopper in your area to shop and deliver your order. Contactless delivery is available with our “Leave at my door”
+                    option.
+                    <br>
+                    You can track your order’s progress and communicate with your shopper every step of the way using the Instacart app or
+                    website.
+                    Instacart also offers curbside pickup at select retail locations. Simply place your order and choose a pickup time, and
+                    a shopper will prepare your order at the store.
+                    <br>
+                    When you get to the store, use the Instacart app to notify us. Depending on the store, a shopper or store employee will
+                    bring the groceries to your car, or you can pick them up at the designated area</p>
+                </div>
+                <hr>
+            </div>
+            <div class="q1">
+                <h2>How much does vegancart cost? <i class="fa fa-plus" id="show2"
+                        onclick="showContent2()"></i>
+            
+                    <i class="fa fa-minus" id="hide2" onclick="hideContent2()"></i>
+                </h2>
+                <div id="queText2">
+                    <p>You don’t need a membership to order with Instacart. In fact, you can even order from warehouse clubs, like Costco,
+                    Sam’s Club, and BJ’s Wholesale Club, without a retailer club membership.
+                    <br>
+                    To get started, create an account, select the store you want to shop, and place your order. New customers may be
+                    eligible for free delivery promotions.
+                    <br>
+                    Delivery: Fees start at $3.99 for same-day orders over $35. Fees vary for one-hour deliveries, club store deliveries,
+                    and deliveries under $35.
+                    <br>
+                    Pickup: There may be a “pickup fee” (equivalent to a delivery fee for pickup orders) on your pick up order.
+                    <br>
+                    Service fees: Service fees vary and are subject to change based on factors like location and the number and types of
+                    items in your cart. Orders containing alcohol have a separate service fee.
+                    <br>
+                    With an optional Instacart Express membership, you can get $0 delivery fee on every order over $35 and lower service
+                    fees too.
+                    <br>
+                    Tipping is optional but encouraged for delivery orders. It’s a great way to show your shopper appreciation and
+                    recognition for excellent service. 100% of your tip goes directly to the shopper who delivers your order.
+                    </p>
+                </div>
+                <hr>
+            </div>
+            <div class="q1">
+                <h2>What happens if something is out of stock? <i class="fa fa-plus" id="show3"
+                        onclick="showContent3()"></i>
+            
+                    <i class="fa fa-minus" id="hide3" onclick="hideContent3()"></i>
+                </h2>
+                <div id="queText3">
+                    <p>Instacart makes it easy to communicate with your shopper. When an item you want is out-of-stock at the store, your
+                    shopper will follow your replacement preferences.
+                    You can set item and delivery instructions in advance, as well as chat directly with your shopper while they shop and
+                    deliver your items. You can tell the shopper to:
+                    <br>
+                        <ul>
+                        <li>Find Best Match: By default, your shopper will use their best judgement to pick a replacement for your item.</li>
+                        <li>Pick Specific Replacement: You can pick a specific alternative for the shopper to purchase if your first choice is
+                        out-of-stock.</li>
+                        <li>Don’t Replace: For items you’d rather not replace, choose “Don’t replace” to get a refund if the item is out of stock.</li>
+                        </ul></p>
+                </div>
+                <hr>
+            </div>
+            <div class="q1">
+                <h2>What happens if there's an issue with my order? <i class="fa fa-plus" id="show4"
+                        onclick="showContent4()"></i>
+            
+                    <i class="fa fa-minus" id="hide4" onclick="hideContent4()"></i>
+                </h2>
+                <div id="queText4">
+                    <p>If something isn’t right, you’ve got options. In the Instacart app or website, you can report:
+                    <br>
+                    <ul>
+                        <li>Missing items</li>
+                        <li>Incorrect items</li>
+                        <li>Damaged items</li>
+                        <li>Poor replacements</li>
+                        <li>Early/late orders</li>
+                    </ul>
+                    <br></p>
+                </div>
+                <hr>
+            </div>
+            <div class="q1">
+                <h2>Can i get contactless delivery with vegan cart  <i class="fa fa-plus" id="show5" onclick="showContent5()"></i>
+                    <i class="fa fa-minus" id="hide5" onclick="hideContent5()"></i>
+                </h2>
+                <div id="queText5">
+                    <p>The health and safety of our community is our number one priority. We are excited to offer contactless delivery through
+                    our Leave at My Door delivery feature.
+                    <br>
+                    Leave at My Door delivery gives you the flexibility to have your groceries delivered without having to come to the door
+                    or be at home. You can leave delivery instructions for your shopper at checkout, and we’ll notify you when your order
+                    arrives.
+                    <br>
+                    Leave at My Door is now the default setting for all Instacart deliveries. If you’d prefer to not use this feature,
+                    simply uncheck the box that says “Leave at my door if I’m not around” at checkout.
+                    <br>
+                    Customers who order alcohol, prescriptions, or certain high-value items may need to show ID upon delivery. We ask
+                    shoppers to wear masks whenever they come into contact with customers</p>
+                </div>
+                <hr>
+            </div>
+
+    </section>
+<!-- end of questions -->
+<!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4 class="dvn"> Get deliveries with Instacart</h4>
+                    <i class="fa fa-apple"></i><h5>iOS</h5><i class="fa fa-android"></i><h5>Android</h5>
+                </div>
+                <div class="footer-col">
+                    <h4 class="dropbtn">Top departments</h4>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Baked Goods</a></li>
+                        <li><a href="#">Fresh Products</a></li>
+                        <li><a href="#">Dairy Products</a></li>
+                        <li><a href="#">Meat</a></li>
+                        <li><a href="#">Meat Alternatives</a></li>
+                        <li><a href="#">Seafood</a></li>
+                        <li><a href="#">Pantry Food</a></li>
+                        <li><a href="#">View all departments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="dropbtn">More departments</h4>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Alcohol</a></li>
+                        <li><a href="#">Alcohol by location</a></li>
+                        <li><a href="#">Frozen Food</a></li>
+                        <li><a href="#">Beverages</a></li>
+                        <li><a href="#">Organic Grocery</a></li>
+                        <li><a href="#">Household Essentials</a></li>
+                        <li><a href="#">Office Supplies</a></li>
+                        <li><a href="#">Beauty Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="dropbtn">Instacart programs</h4>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Gift cards</a></li>
+                        <li><a href="#">ECT SNAP</a></li>
+                        <li><a href="#">Instacart Express</a></li>
+                        <li><a href="#">Instacart Ads</a></li>
+                        <li><a href="#">Partner Program</a></li>
+                        <li><a href="#">New retailers</a></li>
+                        <li><a href="#">Walmart</a></li>
+                        <li><a href="#">7-Eleven</a></li>
+                        <li><a href="#">The Vitamin shoppe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="dropbtn">Get to know us</h4>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Shop By Location</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4 class="dvn">Become a shopper</h4>
+                    <i class="fa fa-apple"></i>
+                    <h5>iOS</h5><i class="fa fa-android"></i>
+                    <h5>Android</h5>
+                </div>
+                <div class="footer-col">
+                    <h4 class="dropbtn">Make money with us</h4>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Shoper opportunities</a></li>
+                        <li><a href="#">Become a instacart Shopper</a></li>
+                        <li><a href="#">in-store Employ for insta cart earnings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="dropbtn">Top cities</h4>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Los Angels</a></li>
+                        <li><a href="#">New York City</a></li>
+                        <li><a href="#">Chicago</a></li>
+                        <li><a href="#">Washington D.C.</a></li>
+                        <li><a href="#">Organic Grocery</a></li>
+                        <li><a href="#">san Francisco</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="dropbtn">More Cities</h4>
+                    <ul class="dropdown-content">
+                        <li><a href="#">North Shore</a></li>
+                        <li><a href="#">Miami</a></li>
+                        <li><a href="#">Las Vegas</a></li>
+                        <li><a href="#">Atlanta</a></li>
+                        <li><a href="#">Dallas</a></li>
+                        <li><a href="#">View all job Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="dropbtn">Shopper help</h4>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Safety</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer" id="fooTer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="#">Terms of use</a></h4>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="#">Privacy Policy</a></h4>
+                </div>
+                <div class="footer-col">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        <p>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a
+        service mark of Apple Inc. Android, Google Play and the Google Play logo are trademarks of Google LLC.</p>
+        <div class="copyright"><p>&copy;copyright 2021-2022,Inc.website designed by artflix </p></div>
+        </div>
+    </footer>
+    
+<!-- end footer -->
+
+
+<!--------javascript for toaglle menu---->
+    <script type="text/javascript">
+        var navLinks = document.getElementById("navLinks");
+        var queText =document.getElementById("queText");
+        var show = document.getElementById("show");
+        var hide = document.getElementById("hide");
+        var queTextt = document.getElementById("queText2");
+        var showw = document.getElementById("show2");
+        var hidee = document.getElementById("hide2");
+        var queTexttt = document.getElementById("queText3");
+        var showww = document.getElementById("show3");
+        var hideee = document.getElementById("hide3");
+        var queTextttt = document.getElementById("queText4");
+        var showwww = document.getElementById("show4");
+        var hideeee = document.getElementById("hide4");
+        var queTexttttt = document.getElementById("queText5");
+        var showwwww = document.getElementById("show5");
+        var hideeeee = document.getElementById("hide5");
+
+        function showContent(){
+            queText.style.display="block";
+            queText.style.marginTop="50px";
+            hide.style.display="block";
+            hide.style.marginLeft="900px";
+            hide.style.marginTop="-35px";
+            show.style.display="none";
+        }
+        function hideContent() {
+            queText.style.display = "none";
+            show.style.display = "block";
+            hide.style.display = "none";
+            show.style.marginLeft = "900px";
+            show.style.marginTop = "-35px";
+        }
+        function showContent2(){
+            queTextt.style.display = "block";
+            queTextt.style.marginTop = "50px";
+            hidee.style.display = "block";
+            hidee.style.marginLeft = "900px";
+            hidee.style.marginTop = "-35px";
+            showw.style.display = "none";
+        }
+        
+        function hideContent2(){
+            queTextt.style.display = "none";
+            showw.style.display = "block";
+            hidee.style.display = "none";
+            showw.style.marginLeft = "900px";
+            showw.style.marginTop = "-35px";
+        }
+        function showContent3() {
+            queTexttt.style.display = "block";
+            queTexttt.style.marginTop = "50px";
+            hideee.style.display = "block";
+            hideee.style.marginLeft = "900px";
+            hideee.style.marginTop = "-35px";
+            showww.style.display = "none";
+        }
+
+        function hideContent3() {
+            queTexttt.style.display = "none";
+            showww.style.display = "block";
+            hideee.style.display = "none";
+            showww.style.marginLeft = "900px";
+            showww.style.marginTop = "-35px";
+        }
+        function showContent4() {
+            queTextttt.style.display = "block";
+            queTextttt.style.marginTop = "50px";
+            hideeee.style.display = "block";
+            hideeee.style.marginLeft = "900px";
+            hideeee.style.marginTop = "-35px";
+            showwww.style.display = "none";
+        }
+
+        function hideContent4() {
+            queTextttt.style.display = "none";
+            showwww.style.display = "block";
+            hideeee.style.display = "none";
+            showwww.style.marginLeft = "900px";
+            showwww.style.marginTop = "-35px";
+        }
+        function showContent5() {
+            queTexttttt.style.display = "block";
+            queTexttttt.style.marginTop = "50px";
+            hideeeee.style.display = "block";
+            hideeeee.style.marginLeft = "900px";
+            hideeeee.style.marginTop = "-35px";
+            showwwww.style.display = "none";
+        }
+
+        function hideContent5() {
+            queTexttttt.style.display = "none";
+            showwwww.style.display = "block";
+            hideeeee.style.display = "none";
+            showwwww.style.marginLeft = "900px";
+            showwwww.style.marginTop = "-35px";
+        }
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        
+    </script>
+</body>
+</html>

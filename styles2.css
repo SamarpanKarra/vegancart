@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body,html{
+    height: 100%;
+}
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)), url(./img/veg.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sign-up-form{
+    width: 300px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    background:rgba(8, 165, 8, 0.37);
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+.sign-up-form img{
+    width: 500px;
+    position: absolute;
+    align-items: left;
+    float: left;
+    height: auto;
+    top: 23%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+.sign-up-form h1{
+    color: white;
+    margin-bottom: 30px;
+}
+.sign-up-form p{
+    color: #fff;
+}
+.input-box{
+    border-radius: 20px;
+    align-content: center;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid white;
+    outline: none;
+}
+.input-box:hover{
+    background-color: rgba(255, 255, 255, 0.664);
+}
+.fa{
+    font-size: 25px;
+    color: rgb(19, 58, 19);
+    align-items: flex-start;
+}
+
+button{
+    background-image: linear-gradient(#80ff72,#7ee8fa);
+    display: inline-block;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: small;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    border: none;
+    transition: background-color 0.2%,border .2%;
+    cursor: pointer;
+}
+button:hover{
+    background-image: linear-gradient(#7ee8fa,#80ff72);
+}
+
+
+
+
