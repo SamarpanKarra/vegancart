@@ -7,7 +7,7 @@ body,html{
     height: 100%;
 }
 body{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)), url(./img/veg.jpg);
+    background-image:linear-gradient(rgba(11, 226, 22, 0.3),rgba(0,0,0,0.3)), url(./img/veg.jpg);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@ body{
 .sign-up-form{
     width: 300px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
-    background:rgba(8, 165, 8, 0.37);
+    background:rgba(180, 204, 177, 0.37);
     padding: 20px;
     margin: 8% auto 0;
     text-align: center;
@@ -32,7 +32,7 @@ body{
     transform: translate(-50%,-50%);
 }
 .sign-up-form h1{
-    color: white;
+    color: #0AAD0A;
     margin-bottom: 30px;
 }
 .sign-up-form p{
@@ -57,7 +57,8 @@ body{
 }
 
 button{
-    background-image: linear-gradient(#80ff72,#7ee8fa);
+    background-color:  #0AAD0A;
+    color: white;
     display: inline-block;
     padding: 10px 40px;
     font-weight: bold;
@@ -65,13 +66,16 @@ button{
     font-family: sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 200px;
+    border-radius: 50px;
     border: none;
     transition: background-color 0.2%,border .2%;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 button:hover{
-    background-image: linear-gradient(#7ee8fa,#80ff72);
+    background-color: #15a015;
+    transform: scale(1.1);
+    z-index: 2;
 }
 
 
